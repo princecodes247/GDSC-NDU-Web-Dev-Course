@@ -4,10 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
     <title>Web Dev Course</title>
+    <style>
+        #loader {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: 2s 600ms slide-up cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+        #loader p {
+            font-size: 5em;
+            opacity: 0;
+            animation: 1100ms appear ease forwards;
+        
+        }
+        body {
+            padding: 0 10%;
+            background-color: #222;
+            color: #fff;
+            font-family: 'Nunito', sans-serif;
+            background: url("./blob-scene-1.svg") no-repeat fixed;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 4em;
+        }
+        a {
+            color: #55f;
+        }
+        img {
+            width: 500px;
+            height: 200px;
+            background-color: #4444;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background: url("./blob-scene-2.svg") no-repeat fixed;
+                background-size: 100vw;
+            }
+        }
+        @keyframes slide-up {
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+        @keyframes appear {
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Follow Up Materials</h1>
-    <p>The Fokllow up and Practice materials will be linked below</p>
+    <div id="loader">
+        <p>GDSC NDU</p>
+    </div>
+    <h1>
+        Hi There!
+    </h1>
+    <p>Welcome to the GDSC NDU Chapter Frontend Web Dev Course Guide</p>
+    <section>
+        <!-- <img src="" alt="day 1"> -->
+        <h2>Day 1: Installation & Introduction To HTML & CSS</h2>
+        <h3>Materials From class</h3>
+        <ul>
+            <li>Class Work: My Site - Coming Soon</li>
+            <li>Class Work: Login Page - Coming Soon</li>
+            <li>Home Work: Google Search - Coming Soon</li>
+            <li>Home Work: LISTSSS! - Coming Soon</li>
+        </ul>
+
+        <h3>Resources</h3>
+        <ol>
+            <li>
+                <h4>Editors</h4>
+                <ul>
+                    <li>
+                        <a href="https://code.visualstudio.com/download">
+                        VSCode - Visual Studio Code (Recommended)
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="https://www.sublimetext.com/3">
+                        Sublime Text (Alternative if VSCode is too slow on your PC)
+                        </a>
+                    </li>
+                    <br>
+                    <p>If you can't get a PC here are some android alternatives</p>
+                    <li>Spck Editor (for fast devices 3~8GB RAM)
+                        <a href="https://play.google.com/store/apps/details?id=io.spck&hl=en&gl=US">For Android</a>
+                        <a href="https://apps.apple.com/us/app/spck-editor/id1507309511">For iOS</a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree&hl=en&gl=US">
+                            ACode (<3GB RAM) 
+                        
+                    </a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.teejay.trebedit&hl=en&gl=US">
+                            TrebEdit (another small alternative)
+                        
+                    </a>
+                    </li>
+                </ul>
+            </li>
+            <li> 
+                <p>Apps</p>
+                <ul>
+                   
+                    <li>
+                        Learn HTML - Codeliber
+                        <a href="https://play.google.com/store/apps/details?id=com.codeliber.html&hl=en&gl=US">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        Learn CSS - Codeliber
+                        <a href="https://play.google.com/store/apps/details?id=com.codeliber.css&hl=en&gl=US">
+                            
+                        </a>
+                    </li>
+                    <li>
+                    Sololearn
+                    <a href="https://play.google.com/store/apps/details?id=com.sololearn&hl=en&gl=US">For Android</a>
+                    <a href="https://apps.apple.com/us/app/sololearn-learn-to-code/id1210079064">For iOS</a>
+                </li>
+                </ul>
+            </li>
+            <li> 
+                <p>Videos</p>
+                <ul>
+                    
+                    <li>HTML Crash Course freecodecamp</li>
+                    <li>CSS crash course freecodecamp</li>
+                    <li>Days of CSS</li>
+                    <li></li>
+                </ul>
+            </li>
+            <li> 
+                <p>Books</p>
+                <ul>
+                    <li>HTML & CSS - Jon Duckett</li>
+                    <li>HTML5</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
 </body>
 </html>
