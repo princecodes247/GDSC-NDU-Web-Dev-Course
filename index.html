@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap" rel="stylesheet"> 
     <title>Web Dev Course</title>
     <style>
         #loader {
@@ -32,12 +32,16 @@
             padding: 0 10%;
             background-color: #222;
             color: #fff;
-            font-family: 'Nunito', sans-serif;
+                
+                font-family: 'Poppins', sans-serif;
             background: url("./blob-scene-1.svg") no-repeat fixed;
             background-size: cover;
         }
         h1 {
             font-size: 4em;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Nunito', sans-serif;
         }
         a {
             color: #55f;
@@ -50,7 +54,7 @@
 
         @media screen and (max-width: 600px) {
             body {
-                background: url("./blob-scene-2.svg") no-repeat scroll;
+                background: url("./blob-scene-2.svg") no-repeat fixed;
                 /*background-size: 100vw;*/
             }
         }
